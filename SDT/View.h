@@ -4,14 +4,18 @@
 
 #include <string>
 
-class StudentView
+namespace View
 {
-    public void printStudentDetails(String studentName, String studentRollNo)
-    {
-        System.out.println("Student: ");
-        System.out.println("Name: " + studentName);
-        System.out.println("Roll No: " + studentRollNo);
-    }
+	class Student
+	{
+	public:
+		void printStudentDetails(const std::string& studentName, const std::string& studentRollNo)
+		{
+			std::cout << "Student: "
+				<< "\nName: " + studentName
+				<< "\nRoll No: " + studentRollNo << std::endl;
+		}
+	};
 }
 
 #endif // !VIEW_H_
