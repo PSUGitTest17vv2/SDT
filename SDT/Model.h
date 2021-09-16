@@ -20,7 +20,7 @@ namespace model
 
 		void setRollNo(std::string rollNo)
 		{
-			rollNo = rollNo;
+			this->rollNo = rollNo;
 		}
 
 		std::string getName()
@@ -30,7 +30,7 @@ namespace model
 
 		void setName(std::string name)
 		{
-			name = name;
+			this->name = name;
 		}
 	};
 }
