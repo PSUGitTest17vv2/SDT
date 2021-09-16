@@ -17,8 +17,8 @@ namespace controller
 	public:
 		Student(model::Student model, view::Student view)
 		{
-			model = model;
-			view = view;
+			this->model = model;
+			this->view = view;
 		}
 
 		void setStudentName(std::string name)
