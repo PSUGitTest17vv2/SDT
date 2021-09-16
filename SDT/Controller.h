@@ -13,7 +13,7 @@ namespace Controller
 		View::Student view;
 
 	public:
-		Student(Model::Student model, View::StudentView view)
+		Student(Model::Student model, View::Student view)
 		{
 			model = model;
 			view = view;
