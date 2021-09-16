@@ -4,7 +4,7 @@
 
 #include <string>
 
-namespace Model
+namespace model
 {
 	class Student
 	{
