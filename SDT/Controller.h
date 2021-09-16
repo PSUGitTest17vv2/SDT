@@ -4,41 +4,46 @@
 
 #include <string>
 
-class StudentController
+namespace Controller
 {
-    private Student model;
-    private StudentView view;
+	class Student
+	{
+	private:
+		Model::Student model;
+		View::Student view;
 
-    public StudentController(Student model, StudentView view)
-    {
-        this.model = model;
-        this.view = view;
-    }
+	public:
+		Student(Model::Student model, View::StudentView view)
+		{
+			model = model;
+			view = view;
+		}
 
-    public void setStudentName(String name)
-    {
-        model.setName(name);
-    }
+		void setStudentName(std::string name)
+		{
+			model.setName(name);
+		}
 
-    public String getStudentName()
-    {
-        return model.getName();
-    }
+		std::string getStudentName()
+		{
+			return model.getName();
+		}
 
-    public void setStudentRollNo(String rollNo)
-    {
-        model.setRollNo(rollNo);
-    }
+		void setStudentRollNo(std::string rollNo)
+		{
+			model.setRollNo(rollNo);
+		}
 
-    public String getStudentRollNo()
-    {
-        return model.getRollNo();
-    }
+		std::string getStudentRollNo()
+		{
+			return model.getRollNo();
+		}
 
-    public void updateView()
-    {
-        view.printStudentDetails(model.getName(), model.getRollNo());
-    }
+		void updateView()
+		{
+			view.printStudentDetails(model.getName(), model.getRollNo());
+		}
+	};
 }
 
 #endif // !CONTROLLER_H_
