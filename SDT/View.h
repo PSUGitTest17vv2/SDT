@@ -11,9 +11,9 @@ namespace view
 	public:
 		void printStudentDetails(const std::string& studentName, const std::string& studentRollNo)
 		{
-			std::cout << "Student: "
-				<< "\nName: " + studentName
-				<< "\nRoll No: " + studentRollNo << std::endl;
+			std::cout << "--- Student ---"
+					<< "\nName:    " << studentName
+					<< "\nRoll No: " << studentRollNo << std::endl << std::endl;
 		}
 	};
 }
