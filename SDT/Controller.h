@@ -3,6 +3,8 @@
 #define CONTROLLER_H_
 
 #include <string>
+#include "Model.h"
+#include "View.h"
 
 namespace controller
 {
