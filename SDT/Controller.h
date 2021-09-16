@@ -4,7 +4,7 @@
 
 #include <string>
 
-namespace Controller
+namespace controller
 {
 	class Student
 	{
