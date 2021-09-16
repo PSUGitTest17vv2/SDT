@@ -19,7 +19,12 @@ int main()
 	retriveStudentFromDatabase(model, "Mark Abramov", "15UCS157");
 
 	view::Student view;
-	view.printStudentDetails(model.getName(), model.getRollNo());
+	controller::Student controller(model, view);
+
+	controller.updateView();
+	controller.setStudentName("Ada Wong");
+	controller.setStudentRollNo("20UCS456");
+	controller.updateView();
 
 	return 0;
 }
