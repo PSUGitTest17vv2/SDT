@@ -4,30 +4,35 @@
 
 #include <string>
 
-class Student
+namespace Model
 {
-    private String rollNo;
-    private String name;
+	class Student
+	{
+	private:
+		std::string rollNo;
+		std::string name;
 
-    public String getRollNo()
-    {
-        return rollNo;
-    }
+	public:
+		std::string getRollNo()
+		{
+			return rollNo;
+		}
 
-    public void setRollNo(String rollNo)
-    {
-        this.rollNo = rollNo;
-    }
+		void setRollNo(std::string rollNo)
+		{
+			rollNo = rollNo;
+		}
 
-    public String getName()
-    {
-        return name;
-    }
+		std::string getName()
+		{
+			return name;
+		}
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+		void setName(std::string name)
+		{
+			name = name;
+		}
+	};
 }
 
 #endif // !MODEL_H_
