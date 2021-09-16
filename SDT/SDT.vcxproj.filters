@@ -13,5 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\MVCmodules">
+      <UniqueIdentifier>{db135c9b-486a-4f79-8586-b0dad2c4bb79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MVCmodules">
+      <UniqueIdentifier>{2f5d9717-ca0a-4fb7-ab12-cca3157e0728}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MVC.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Файлы заголовков\MVCmodules</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>Файлы заголовков\MVCmodules</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Файлы заголовков\MVCmodules</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
