@@ -9,11 +9,11 @@ namespace controller
 	class Student
 	{
 	private:
-		Model::Student model;
-		View::Student view;
+		model::Student model;
+		view::Student view;
 
 	public:
-		Student(Model::Student model, View::Student view)
+		Student(model::Student model, view::Student view)
 		{
 			model = model;
 			view = view;
