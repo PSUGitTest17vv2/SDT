@@ -9,11 +9,15 @@ namespace view
 	class Student
 	{
 	public:
-		void printStudentDetails(const std::string& studentName, const std::string& studentRollNo)
+		void printStudentDetails(const std::string& studentName,
+								 const std::string& studentRollNo,
+								 unsigned age)
 		{
 			std::cout << "--- Student ---"
-					<< "\nName:    " << studentName
-					<< "\nRoll No: " << studentRollNo << std::endl << std::endl;
+					  << "\nName:    " << studentName
+					  << "\nAge:     " << age
+					  << "\nRoll No: " << studentRollNo
+					  << std::endl << std::endl;
 		}
 	};
 }

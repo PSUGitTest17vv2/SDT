@@ -21,29 +21,44 @@ namespace controller
 			this->view = view;
 		}
 
+		// Name
+		// ---------------------------------------
+		std::string getStudentName()
+		{
+			return model.getName();
+		}
 		void setStudentName(std::string name)
 		{
 			model.setName(name);
 		}
 
-		std::string getStudentName()
+		// Age
+		// ---------------------------------------
+		unsigned getAge()
 		{
-			return model.getName();
+			return model.getAge();
+		}
+		void setAge(unsigned age)
+		{
+			model.setAge(age);
 		}
 
+		// RollNo
+		// ---------------------------------------
+		std::string getStudentRollNo()
+		{
+			return model.getRollNo();
+		}
 		void setStudentRollNo(std::string rollNo)
 		{
 			model.setRollNo(rollNo);
 		}
 
-		std::string getStudentRollNo()
-		{
-			return model.getRollNo();
-		}
-
+		// Update
+		// ---------------------------------------
 		void updateView()
 		{
-			view.printStudentDetails(model.getName(), model.getRollNo());
+			view.printStudentDetails(model.getName(), model.getRollNo(),model.getAge());
 		}
 	};
 }
